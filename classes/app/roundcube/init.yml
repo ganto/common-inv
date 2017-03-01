@@ -1,0 +1,18 @@
+---
+# This class provides the Roundcube Web application
+
+applications:
+  - roundcube
+
+parameters:
+  app__roundcube__smtp_user: '%u'
+  app__roundcube__smtp_pass: '%p'
+  app__roundcube__smtp_port: '465'
+  app__roundcube__plugins:
+    - 'managesieve'
+  # The parameters below MUST be defined individually
+  app__roundcube__default_host: ''
+  app__roundcube__domain: ''
+  app__roundcube__smtp_server: ''
+  app__roundcube__local_config_map:
+    managesieve_host: ''
